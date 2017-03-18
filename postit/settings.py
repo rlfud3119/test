@@ -127,3 +127,8 @@ DEFAULT_FILE_STORAGE = 'syorages.backeends.azure_storage.AzureStorage'
 AZURE_ACCOUNT_NAME = 'kimserver'
 AZURE_ACCOUNT_KEY = 'GQ2hjaDjAIPXQlQTnaZluipgHExYffr5pF3Jd+WgBE5x7ZQLCmL/z/y3qGq0qFCRKD+ITQURfb6pALTskQGZBw=='
 AZURE_CONTAINER = 'test'
+
+
+import os
+
+AZURE_ACCOUNT_KEY = os.environ['AZURE_ACCOUNT_KEY']
